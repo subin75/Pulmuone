@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>풀무원</title>
+
+    <!-- meta -->
+    <meta name="author" content="김도연,황수빈,여태경,천지호">
+    <meta name="description" content="웹사이트 리뉴얼 팀 프로젝트 - 풀무원">
+    <meta name="keywords" content="company, renewal, green, healthy">
+    <meta name="Resource-type" content="document">
+    <meta property="og:title" content="풀무원" />
+    <meta property="og:description" content="풀무원" />
+
+    <!-- resources -->
+    <link rel="stylesheet" href="./css/index.css">
+    <script defer src="./js/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script defer src="./js/common.js"></script>
+    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-gothic.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="./img/public/public_favicon_01.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="./img/public/public_favicon_01.png" sizes="16x16" />
+</head>
+
+<body>
+
+    <!-- fixed 버튼 -->
+    
+    <div class="sticky-btn">
+        <div class="call-btn"><img src="./img/index/index_callbtn_01.png" alt="상담 문의 아이콘"></div>
+        <div class="up-btn"><img src="./img/index/index_upbtn_01.png" alt="업 화살표 아이콘"></div>
+
+        <!-- 고객센터 팝업 -->
+        <div class="call-popup">
+            <button class="close-popup">✖</button>
+            <h3><span>풀무원</span> 고객기쁨센터</h3>
+            <div class="call-center">
+                <img src="./img/index/index_callbtn_02.png" alt="전화 아이콘">
+                <h2>080-022-0085</h2>
+            </div>
+            <p>해외 82-2-6411-8301
+                (발신자 부담)</p>
+            <div class="call-center2">
+                <b>상담시간</b>
+                <b>평일 09:00 ~ 18:00
+                    점심 12:00 ~ 13:00
+                    토요일,일요일,공휴일 휴무</b>
+            </div>
+            <div class="call-center2">
+                <b>이메일 상담</b>
+                <b> pulmuone_help@pulmuone.com 
+                    이메일로 문의 시 상담원이 1대1로
+                    고객님의 의견을 접수합니다.</b>
+            </div>
+            <p>풀무원은 고객의 의견을 소중히 여깁니다.</p>
+        </div>
+    </div>
+
+    
+
+    <main>
+        <section class="sec1">
+            <div class="section-wrap">
+                <div class="sec1-main-text">
+                    <span><b>건강에 좋은 것이</b></span>
+                    <span><b>환경에도 좋습니다.</b></span>
+                    <span><b>사람과 자연을 함께 사랑하는</b></span>
+                    <span><b>풀무원이 권하는
+                            지혜로운 라이프 스타일</b></span>
+                </div>
+                <div class="bg-video">
+                    <video class="bg-video__content" autoplay muted loop>
+                        <source src="./srcs/video/pulmuone.mp4" type="video/mp4" />
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <section class="sec2">
+            <div class="section-wrap">
+                <div class="main-title">
+                    <img src="./img/public/public_logo_02.png" alt="풀무원 로고 이미지">
+                    <h2>바른먹거리로 사람과
+                        지구의 건강한 내일을 만드는 기업입니다.</h2>
+                </div>
+
+                <div class="sec2-slider">
+                    <div class="container">
+                        <div class="img-wrap">
+                            <img class="img" src="./img/index/index_slideimg_01.png" alt="농작물 확대 이미지">
+                            <span class="slide-text">
+                                <b>1. 식물성지향</b>
+                                <b>사람과 지구의 건강을 위해
+                                    식물성 원료를 지향하고
+                                    동물성 원료 사용을 줄이는 제품</b>
+                            </span>
+                        </div>
+                        <div class="img-wrap">
+                            <img class="img" src="./img/index/index_slideimg_02.png" alt="소 이미지">
+                            <span class="slide-text">
+                                <b>2. 동물복지</b>
+                                <b>건강한 사육환경에서 생산하고
+                                    생태계의 지속적인 순환에
+                                    기여하는 동물복지 식재</b>
+                            </span>
+                        </div>
+                        <div class="img-wrap">
+                            <img class="img" src="./img/index/index_slideimg_03.png" alt="농작물을 심는 아이 이미지">
+                            <span class="slide-text">
+                                <b>3. 친환경 케어</b>
+                                <b>차별화된 디자인 푸드와
+                                    큐레이션 서비스 역량을 바탕으로,
+                                    특별한 고객 경험
+                                    서비스를 제공</b>
+                            </span>
+                        </div>
+                        <div class="img-wrap">
+                            <img class="img" src="./img/index/index_slideimg_04.png" alt="숲 이미지">
+                            <span class="slide-text">
+                                <b>4. 건강한 경험</b>
+                                <b>원료,제조,판매,폐기 등
+                                    환경에 부정적인 영향 요인을
+                                    제거하거나 최소화</b>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sec2-slider-tablet">
+                    <div class="sec2-container">
+                        <div class="large-image">
+                            <img id="main-img" src="./img/index/index_slideimg_05.png" alt="큰 이미지">
+                            <div class="text-overlay">
+                                <b id="main-title">01. 식물성지향</b>
+                                <b id="main-desc">사람과 지구의 건강을 위해
+                                    식물성 원료를 지향하고
+                                    동물성 원료 사용을 줄이는 제품/식단</b>
+                            </div>
+                        </div>
+
+                        <div class="small-images">
+                            <div class="row">
+                                <div class="small-img active" data-img="./img/index/index_slideimg_05.png"
+                                    data-title="01. 식물성지향"
+                                    data-desc="사람과 지구의 건강을 위해
+                                    식물성 원료를 지향하고
+                                    동물성 원료 사용을 줄이는 제품/식단">
+                                    <img src="./img/index/index_slideimg_05.png" alt="작은 이미지 1">
+                                </div>
+                                <div class="small-img" data-img="./img/index/index_slideimg_06.png"
+                                    data-title="02. 동물복지" data-desc="건강한 사육환경에서 생산하고
+                                    생태계의 지속적인 순환에 기여하는
+                                    동물복지 식재">
+                                    <img src="./img/index/index_slideimg_06.png" alt="작은 이미지 2">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="small-img" data-img="./img/index/index_slideimg_07.png"
+                                    data-title="03. 친환경 케어" data-desc="차별화된 디자인 푸드와
+                                    큐레이션 서비스 역량을 바탕으로,
+                                    특별한 고객 경험 서비스를 제공">
+                                    <img src="./img/index/index_slideimg_07.png" alt="작은 이미지 3">
+                                </div>
+                                <div class="small-img" data-img="./img/index/index_slideimg_08.png"
+                                    data-title="04. 건강한 경험" data-desc="원료, 제조, 판매/포장, 폐기 등
+                                    환경에 부정적인 영향 요인을
+                                    제거하거나 최소화">
+                                    <img src="./img/index/index_slideimg_08.png" alt="작은 이미지 4">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sec2-slider-mobile">
+                    <div class="sec2-container">
+                        <div class="large-image">
+                            <img id="main-img" src="./img/index/index_slideimg_05.png" alt="큰 이미지">
+                            <div class="text-overlay">
+                                <b id="main-title">01. 식물성지향</b>
+                                <b id="main-desc">사람과 지구의 건강을 위해
+                                    식물성 원료를 지향하고
+                                    동물성 원료 사용을 줄이는 제품/식단</b>
+                            </div>
+                        </div>
+                        <div class="large-image">
+                            <img id="main-img" src="./img/index/index_slideimg_06.png" alt="큰 이미지">
+                            <div class="text-overlay">
+                                <b id="main-title">02. 동물복지</b>
+                                <b id="main-desc">건강한 사육환경에서 생산하고
+                                    생태계의 지속적인 순환에 기여하는
+                                    동물복지 식재</b>
+                            </div>
+                        </div>
+                        <div class="large-image">
+                            <img id="main-img" src="./img/index/index_slideimg_07.png" alt="큰 이미지">
+                            <div class="text-overlay">
+                                <b id="main-title">03. 친환경 케어</b>
+                                <b id="main-desc">차별화된 디자인 푸드와
+                                    큐레이션 서비스 역량을 바탕으로,
+                                    특별한 고객 경험 서비스를 제공</b>
+                            </div>
+                        </div>
+                        <div class="large-image">
+                            <img id="main-img" src="./img/index/index_slideimg_08.png" alt="큰 이미지">
+                            <div class="text-overlay">
+                                <b id="main-title">04. 건강한 경험</b>
+                                <b id="main-desc">원료, 제조, 판매/포장, 폐기 등
+                                    환경에 부정적인 영향 요인을
+                                    제거하거나 최소화</b>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sec3">
+            <div class="section-wrap">
+                <div class="main-title">
+                    <img src="./img/public/public_logo_02.png" alt="풀무원 로고">
+                    <h2>우리의 일하는 방식이자,
+                        무엇보다 우선되어야 할 가치를 소개합니다. </h2>
+                </div>
+
+                <div class="sec3-object-wrap">
+                    <div class="objects">
+                        <div class="objects-circle">
+                            <div>
+                                <b>Trust</b>
+                                <b>신뢰</b>
+                                <b>고객과의 약속을 지키며</b>
+                            </div>
+                        </div>
+                        <div class="objects-circle">
+                            <div>
+                                <b>Passion</b>
+                                <b>열정</b>
+                                <b>도전과 혁신을 통해</b>
+                            </div>
+                        </div>
+                        <div class="objects-circle">
+                            <div>
+                                <b>Excellence</b>
+                                <b>탁월</b>
+                                <b>차별화된 결과를 만든다</b>
+                            </div>
+                        </div>
+                        <div class="objects-line"></div>
+                    </div>
+                    <div class="objects-text">
+                        <b>풀무원은 고객을 위한 <span>새롭고 차별화된 가치</span>를 제공합니다.</b>
+                    </div>
+                </div>
+
+                <div class="sec3-object-mobile">
+                    <div class="objects">
+                        <div class="objects-circle">
+                            <div>
+                                <b>Trust 신뢰</b>
+                                <b>고객과의 약속을 지키며</b>
+                            </div>
+                        </div>
+                        <div class="objects-circle">
+                            <div>
+                                <b>Passion 열정</b>
+                                <b>도전과 혁신을 통해</b>
+                            </div>
+                        </div>
+                        <div class="objects-circle">
+                            <div>
+                                <b>Excellence 탁월</b>
+                                <b>차별화된 결과를 만든다</b>
+                            </div>
+                        </div>
+                        <div class="objects-line"></div>
+                    </div>
+
+                    <div class="objects-text">
+                        <b>풀무원은 고객을 위한
+                            <span>새롭고 차별화된 가치</span>를 제공합니다.</b>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sec4">
+            <div class="section-wrap">
+                <div class="main-title">
+                    <img src="./img/public/public_logo_05.png" alt="흰색 풀무원 로고 이미지">
+                    <h2>내 가족의 건강과 행복을 위한
+                        바른먹거리 캠페인</h2>
+                </div>
+
+                <div class="sec4-tab-menu">
+                    <div class="sec4-slogun">
+                        <b>“ 나를 위해 지구를 위해 ”</b>
+                    </div>
+                    
+                    <ul class="tabs">
+                        <li class="tab-link current" data-tab="tab-1">원칙</li>
+                        <li class="tab-link" data-tab="tab-2">바른
+                            먹거리</li>
+                    </ul>
+
+                    <div id="tab-1" class="tab-content current">
+                        <div class="tab-menu-1">
+                            <b>나와 지구를 위한 풀무원 바른먹거리 원칙!</b>
+
+                            <div class="tab-box">
+                                <div class="arrowbox-1">
+                                    <div class="bg-box">
+                                        <img src="./img/index/index_boxcontimg_01.png" alt="영양 균형 뱃지 이미지">
+                                        <b>Nutrition
+                                            Balance</b>
+                                    </div>
+                                </div>
+                                <div class="arrowbox-1">
+                                    <div class="bg-box">
+                                        <img src="./img/index/index_boxcontimg_02.png" alt="환경 뱃지 이미지">
+                                        <b>Eco
+                                            Caring</b>
+                                    </div>
+                                </div>
+                                <div class="arrowbox-1">
+                                    <div class="bg-box">
+                                        <img src="./img/index/index_boxcontimg_03.png" alt="클린 라벨 뱃지 이미지">
+                                        <b>Clean
+                                            Label</b>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-text-box">
+                                <b>
+                                    <span>영양균형</span>을 고려한
+                                    식단을 지향하고,
+                                    제품을 만듭니다.
+                                </b>
+                                <b>
+                                    <span>환경</span>을 생각한
+                                    제조과정과 사업장 설계,
+                                    포장원칙을 준수합니다.
+                                </b>
+                                <b>
+                                    <span>클린라벨</span>을 통해 원료와
+                                    첨가물을 엄격하게 관리하고
+                                    투명하게 공개합니다.
+                                </b>
+                            </div>
+
+                            <div class="tab-charac-1">
+                                <img src="./img/index/index_tabcontcharac_01.png" alt="말풍선 이미지">
+                                <img src="./img/index/index_tabcontcharac_02.png" alt="풀무원 캐릭터-2 이미지">
+                            </div>
+                        </div>
+
+                        <div class="tab-menu-1-mobile">
+                            <b>나와 지구를 위한
+                                풀무원 바른먹거리 원칙!</b>
+
+                            <div class="tab-box-mobile">
+                                <div class="tab-box-flip">
+                                    <div class="tab-box-cards">
+                                        <!-- 앞면 -->
+                                        <div class="tab-box-front">
+                                            <img src="./img/index/index_boxcontimg_01.png" alt="화분 이미지">
+                                            <b>Nutrition
+                                                Balance</b>
+                                        </div>
+                                        <!-- 뒷면 -->
+                                        <div class="tab-box-back">
+                                            <b><span>영양균형을
+                                                고려한 식단</span>을
+                                                지향하고,
+                                                제품을 만듭니다.</b>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-box-flip">
+                                    <div class="tab-box-cards">
+                                        <!-- 앞면 -->
+                                        <div class="tab-box-front">
+                                            <img src="./img/index/index_boxcontimg_02.png" alt="지구본 이미지">
+                                            <b>Clean
+                                                Label</b>
+                                        </div>
+                                        <!-- 뒷면 -->
+                                        <div class="tab-box-back">
+                                            <b><span>환경을 생각한</span>
+                                                제조과정과 사업장 설계,
+                                                포장원칙을 준수합니다.</b>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-box-flip">
+                                    <div class="tab-box-cards">
+                                        <!-- 앞면 -->
+                                        <div class="tab-box-front">
+                                            <img src="./img/index/index_boxcontimg_03.png" alt="클린라벨 뱃지 이미지">
+                                            <b>Eco
+                                                Caring</b>
+                                        </div>
+                                        <!-- 뒷면 -->
+                                        <div class="tab-box-back">
+                                            <b><span>클린라벨</span>을 통해
+                                                원료와 첨가물을
+                                                엄격하게 관리하고
+                                                투명하게 공개합니다.</b>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab-2" class="tab-content">
+                        <div class="tab-menu-2">
+                            <b>바른먹거리의 중요성을 알리고
+                                바른 식습관을 교육합니다.</b>
+
+                            <div class="tab-box">
+                                <div class="square-box">
+                                    <a href="./food_campaign.html">
+                                        <div>
+                                            <b>어린이</b>
+                                            <img src="./img/index/index_tabcontimg_01.png" alt="새싹 이미지">
+                                            <b>어릴 적 입맛이
+                                                평생 건강이 됩니다.</b>
+                                        </div>
+                                    </a>
+                                    <a href="./food_campaign.html">
+                                        <div>
+                                            <b>성인</b>
+                                            <img src="./img/index/index_tabcontimg_02.png" alt="꽃 이미지">
+                                            <b>나와 지구를 위한
+                                                방법을 길러줍니다.</b>
+                                        </div>
+                                    </a>
+                                    <a href="./food_campaign.html">
+                                        <div>
+                                            <b>시니어</b>
+                                            <img src="./img/index/index_tabcontimg_03.png" alt="나무 이미지">
+                                            <b>건강한 삶에 대한
+                                                고민을 해결합니다.</b>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="tab-song-wrap">
+                                <button id="customPlayButton" class="btn btn-primary">
+                                    <span>바른먹거리 송 재생하기</span>
+                                    <div>
+                                        <img src="./img/index/index_tabcontsong_01.png" alt="재생 아이콘">
+                                    </div>
+                                </button>
+                                <b>아이들과 함께 이 노래를 들으며 바른먹거리를 실천할 수 있습니다.</b>
+                            </div>
+
+                            <div class="tab-charac-2">
+                                <img src="./img/index/index_tabcontcharac_03.png" alt="말풍선 이미지">
+                                <img src="./img/index/index_tabcontcharac_04.png" alt="풀무원 캐릭터-2 이미지">
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                
+            </div>
+        </section>
+
+        <section class="sec5">
+            <div class="section-wrap">
+                <div class="main-title">
+                    <img src="./img/public/public_logo_02.png" alt="풀무원 로고">
+                    <h2>풀무원 기업 & ESG 경영 뉴스를 소개합니다.</h2>
+                </div>
+
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="https://www.industrynews.co.kr/news/articleView.html?idxno=60203" target="_blank">
+                                <span>기업뉴스</span>
+                                <img src="./img/index/index_newsimg_01.jpg" alt="기업뉴스 기사 이미지-1">
+                                <b>풀무원, 새만금 김 육상 양식 사업 위해 민·관·학 협약 체결…“기술개발 및 확산”</b>
+                                <b>풀무원은 새만금개발청, 전북특별자치도, 군산시, 한국농어촌공사, 전북지역어업인 단체, 공주대, 포항공대 등 11곳과 '새만금 글로벌 김 육상 양식 사업
+                                    성공을 위한 민·관·학 상생업무협약'을 체결했다고 14일 밝혔다.
+                                    풀무원은 이를 통해 새만금 국가산업단지에 육상 김 사업을 위한 부지를 추가 조성해 육상 김 사업 확대에 나선다.
+                                    지난 13일 전북 군산시 새만금개발청에서 열린 이번 협약을 통해 풀무원을 포함한 참여 기관들은 육상 김 양식 기술 개발 및 확산, 연구 기반 조성,
+                                    지역 어업인 지원 등을 위해 협력할 예정이다.</b>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://www.metroseoul.co.kr/article/20250213500203" target="_blank">
+                                <span>기업뉴스</span>
+                                <img src="./img/index/index_newsimg_02.jpg" alt="기업뉴스 기사 이미지-2">
+                                <b>풀무원, S&P Global 2024년 지속가능성 평가에서 2년 연속 Top5 선정</b>
+                                <b>풀무원이 세계 3대 신용평가사 중 하나인 S&P Global이 발표한 2024년 기업 지속가능성 평가 CSA(Corporate Sustainability
+                                    Assessment, 구 DJSI)에서 작년에 이어 2년 연속 글로벌 식품기업 Top 5에 선정됐다고 13일 밝혔다.
+                                    이번 평가에서 풀무원은 국내 식품사 중 최고 순위를 기록하고 글로벌 식품기업 중 4위를 달성하며 지속가능경영의 우수성을 다시 한번 입증했다.
+                                    S&P 연례보고서에 따르면 이번 CSA 평가에는 전 세계 7690여 개 기업이 참여했으며, 식품 산업(Food Products)에서는 213개 기업이
+                                    평가를 받았다.</b>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://www.foodnews.co.kr/news/articleView.html?idxno=111705" target="_blank">
+                                <span>뮤지엄김치간</span>
+                                <img src="./img/index/index_newsimg_03.jpg" alt="기업뉴스 기사 이미지-3">
+                                <b>풀무원 뮤지엄김치간, 올해 7500명 대상 ‘김치학교’ 운영</b>
+                                <b>풀무원 뮤지엄김치간은 올해 7500명을 대상으로 무료 김치 체험 프로그램 ‘김치학교’를 운영한다.
+                                    뮤지엄김치간은 ‘김치학교’ 참여 대상을 기존 어린이, 외국인, 2030세대, 장애인에서 시니어까지 확대, 전 세대를 아우르는 프로그램으로 운영한다. 각
+                                    프로그램은 남녀노소 누구나 한국의 김치와 김장문화를 쉽게 배우고 즐길 수 있도록 대상별 특성에 맞춘 이론 교육과 김치 체험으로 구성했다. 6~13세를
+                                    대상으로 하는 ‘어린이 김치학교’는 1월부터 12월까지 매달 운영된다.</b>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://www.k-health.com/news/articleView.html?idxno=76965" target="_blank">
+                                <span>사회공헌뉴스</span>
+                                <img src="./img/index/index_newsimg_04.jpg" alt="기업뉴스 기사 이미지-4">
+                                <b>풀무원투게더, ‘올해의 편한 일터’ 고용노동부 장관상 수상</b>
+                                <b>풀무원투게더는 오늘(20일) ‘2024 올해의 편한 일터’에서 고용노동부 장관상을 수상했다고 밝혔다.
+                                    ‘올해의 편한 일터’상은 장애인 고용과 장애인 편의시설 설치 우수사례를 발굴하고 확산하기 위해 2013년부터 제정된 상이다. 풀무원투게더는 올해
+                                    유일하게 고용노동부 장관상을 수상했다.
+                                    풀무원투게더는 장애인 일자리 창출과 장애인 편의시설 설치, 장애인 친화적 근무환경 조성 등의 노력을 인정받았다. 특히 투게더공장 모든 영역에 장애물
+                                    없는 생활환경인증과 글로벌 친환경건축물 인증 설계를 반영해 안전하고 쾌적한 근무환경을 조성했다.</b>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://www.asiae.co.kr/article/2025021008411049835" target="_blank">
+                                <span>브랜드뉴스</span>
+                                <img src="./img/index/index_newsimg_05.jpg" alt="기업뉴스 기사 이미지-5">
+                                <b>풀무원다논, '액티비아 150g' 출시…"한 컵으로 아침식사 해결"</b>
+                                <b>신제품 액티비아 150g은 부드러운 플레인 요거트를 베이스로 새콤달콤한 과육을 담아 아침 식사와 간식으로 간편하게 즐길 수 있는 떠먹는 요거트 제품이다.
+                                    풀무원다논 액티비아는 소비자들이 아침식사 대용으로 요거트를 즐겨 먹는다는 점에서 착안해 한 컵으로 간편하게 즐길 수 있는 150g 용량을 출시했다.
+                                    150g의 용량에 저지방으로 설계해 부담 없이 가볍게 즐길 수 있는 것이 특징이다. 여기에 액티비아만의 노하우를 담은 체온 활동 유산균, 다논이 독점
+                                    공급하는 프로바이오틱스, 프로바이오틱스의 생장을 돕는 프리바이오틱스 그리고 정상적인 면역 기능에 필요한 아연까지 더해 건강함을 한층 더 높였다.</b>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://www.insightkorea.co.kr/news/articleView.html?idxno=218261" target="_blank">
+                                <span>브랜드뉴스</span>
+                                <img src="./img/index/index_newsimg_06.jpg" alt="기업뉴스 기사 이미지-6">
+                                <b>올가홀푸드, 정월대보름 안심먹거리 기획전 진행</b>
+                                <b>풀무원 계열의 프리미엄 헬스&웰니스 브랜드 올가홀푸드(이하 올가)는 정월대보름을 맞아 올가의 지속가능성과 친환경 가치를 담은 정월대보름 대표 먹거리로
+                                    구성된 기획전을 13일까지 진행한다고 7일 밝혔다.
+                                    정월대보름에 빠질 수 없는 견과류는 농약을 사용하지 않고 재배했다.강원도 화천의 ‘무농약 피땅콩’과 경북 김천의 ‘무농약 피호두’가 대표적이다. 또한
+                                    저온로스팅 공법으로 영양소 파괴를 최소화했다.</b>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+                <!-- mobile -->
+                <div class="sec5-news-mobile">
+                    
+                    <div id="newsWrapper"></div>
+
+                    <div class="news-arrow-btn">
+                        <button id="prevBtn" class="arrow-btn"><img src="./img/index/index_arrowbtn_01.png" alt="이전 버튼"></button>
+                        <div class="news-page-number">1 / 3</div>
+                        <button id="nextBtn" class="arrow-btn"><img src="./img/index/index_arrowbtn_02.png" alt="다음 버튼"></button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="sec6">
+            <div class="section-wrap">
+                <div class="main-title">
+                    <img src="./img/public/public_logo_02.png" alt="풀무원 로고 이미지">
+                    <h2>풀무원 멀티미디어 모아보기</h2>
+                </div>
+
+                <div class="sec6-medias">
+                    <div class="sec6-imglist">
+                        <div class="imglist-1">
+                            <a href="#" target="_blank"><img src="./img/index/index_mediaimg_01.jpg" alt="풀무원 카드뉴스 이미지"></a>
+                        </div>
+
+                        <div class="imglist-2">
+                            <ul>
+                                <li><a href="#" target="_blank"><img src="./img/index/index_mediaimgs_01.jpg"
+                                            alt="풀무원 멀티미디어 썸네일 이미지(직사각형)-1"></a></li>
+                                <li><a href="#" target="_blank"><img src="./img/index/index_mediaimgs_02.jpg"
+                                            alt="풀무원 멀티미디어 썸네일 이미지(직사각형)-2"></a></li>
+                                <li><a href="#" target="_blank"><img src="./img/index/index_mediaimgs_03.jpg"
+                                            alt="풀무원 멀티미디어 썸네일 이미지(직사각형)-3"></a></li>
+                                <li><a href="#" target="_blank"><img src="./img/index/index_mediaimgs_04.jpg"
+                                            alt="풀무원 멀티미디어 썸네일 이미지(직사각형)-4"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+
+
+    </script>
+</body>
+
+
+
+</html>

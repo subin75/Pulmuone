@@ -1,0 +1,589 @@
+@import "./_common";
+:root {
+    --color-white: #F9F9F9;
+    --color-gray: #F0F0F0;
+    --color-black: #3C3C3C;
+    --color-green1: #8CC63E;
+    --color-green2: #B7D47F;
+    --color-green3: #DCEFB7;
+} 
+.p {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(80px); /* 아래에서 시작 */
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.p.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* .b는 스크롤할 때만 보이게 설정 */
+.b {
+    opacity: 0;
+    transform: translateY(20px); /* 처음에 약간 아래에 위치 */
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.b.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.main-title-img {
+    width: 100%;
+    height: 250px;
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+body{
+    background-color: var(--color-white);
+    font-family: 'NanumGothic';
+}
+.company{
+    width: 1636px;
+    margin: 0 auto;
+    color: var(--color-black);
+}
+.main-title{
+    margin: 50px 142px;
+    overflow: hidden;
+    position: relative;
+    font-family: 'money';
+    font-size: 1.6rem;
+    b{
+        display: inline-block;
+        background-color: var(--color-white);
+        position: relative;
+        z-index: 2;
+        padding-right:20px;
+    }
+}
+.main-title::after{
+    content: '';
+    width: 100%;
+    position: absolute;
+    right: 0; 
+    top: 50%;
+    border-bottom: 1px solid var(--color-black);
+    }
+
+// tab
+.tab-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-family: 'money';
+    font-size: 1.1rem;
+    li{
+        padding: 15px 40px;
+        border-radius: 85px;
+        border:1px solid #ddd;
+        transition: .5s;
+    }
+}
+.main-tab-menu .tab-list li:hover,
+.main-tab-menu .tab-list li.active{    
+    background-color: var(--color-green1);
+    color: var(--color-white);
+}
+.tab-con01{
+    text-align: center;
+    margin-top: 90px;
+    transition: all 0.5s ease;
+}
+.tab-con01 > figure {
+    margin-bottom: 90px;
+}
+.tab-con01 > figure > img{
+    width: 100%;
+    border-radius: 46px;
+}
+.tab-con01 > b{
+    margin-top: 90px;
+    font-size: 40px;
+    font-family: 'NanumGothicBold';
+}
+.tab-con01 > strong{
+    font-size: 40px;
+    color: white;
+    background-color: #8CC63E;
+    font-family: 'NanumGothicBold';
+    margin-top: 90px;
+}
+.tab-con01 > p{
+    margin-top: 60px;
+    font-size: 20px;
+    line-height: 2.1;
+    font-family: 'NanumGothic';
+}
+.b{
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.5s ease;}
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+.tab-body02{
+    margin-top: 90px;
+}
+.tab-sub01{
+    float: left;
+    text-align: left;
+}
+.tab-sub01 > b{
+    background-color: #DCEFB7;
+    font-size: 25px;
+    font-family: 'NanumGothicBold';
+}
+.tab-sub01 > p{
+    font-size: 20px;
+    margin-top: 30px;
+    line-height: 2.1;
+    font-family: 'NanumGothic';
+}
+.tab-body02 > figure > img{
+    border-radius: 46px;
+}
+.tab-sub02{
+    margin-top: 90px;
+    text-align: left;
+    > div{
+        display: flex;
+        align-items: flex-start;
+        margin: 30px 0;
+        text-align: left;
+        &::before{
+            content: '';
+            display: inline-block;
+            border: 2px solid #DCEFB7;
+            flex-shrink: 0; //부모가 크기에 상관쓰지 못하게 하는것
+            margin-top: 30px;
+            margin: 15px;
+        }
+        &:nth-of-type(1)::before{width: 100px;}
+        &:nth-of-type(2)::before{width: 200px;}
+        &:nth-of-type(3)::before{width: 300px;}
+        >p:nth-of-type(1){
+            flex-shrink: 0;
+            width: 80px;
+            transform: translateY(-30%);
+        }
+    }
+}
+.tab-sub02 > p{
+    font-size: 25px;
+    background-color: #DCEFB7;
+    display: inline-block; //글자크기에 맞춰테두리
+    margin-bottom: 20px;
+    font-family: 'NanumGothic';
+}
+.tab-sub03 > p{
+    font-size: 30px;
+    font-family: 'NanumGothicBold';
+}
+.tab-sub03 > p:last-of-type{
+    font-size: 20px;
+    font-family: 'NanumGothic';
+}
+.tab-sub04 > p{
+    font-size: 30px;
+    font-family: 'NanumGothicBold';
+}
+.tab-sub04 > p:last-of-type{
+    font-size: 20px;
+    font-family: 'NanumGothic';
+}
+.tab-sub05 > p{
+    font-size: 30px;
+    font-family: 'NanumGothicBold';
+}
+.tab-sub05 > p:last-of-type{
+    font-size: 20px;
+    font-family: 'NanumGothic';
+}
+.tab-sub06 {
+    text-align: right;
+    font-family: 'NanumGothic';
+}
+.tab-sub06 > p{
+    font-size: 20px;
+    margin-top: 90px;
+    line-height: 1.7;
+    font-family: 'NanumGothic';
+    margin-bottom: 40px;
+}
+.tab-sub06 > b{
+    font-size: 20px;
+    font-family: 'NanumGothicExtraBold';
+}
+.tab-sub07 > figure > img{
+    float: right;
+    margin-top: 35px;
+}
+
+//history
+.tab-con02{
+    text-align: center;
+    margin-top: 90px;
+}
+.tab-con02 > strong{
+    letter-spacing: -3px;
+    font-size: 40px;
+    font-family: 'NanumGothicExtraBold';
+}
+.tab-con02 > strong > b{
+    font-size: 40px;
+    font-family: 'NanumGothicExtraBold';
+    color: #8CC63E;
+}
+.tab-con02 > p{
+    margin-top: 60px;
+    font-size: 20px;
+    font-family: 'NanumGothic';
+    line-height: 2.1;
+}
+.tab-sub-head{
+    margin-top: 110px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.tab-sub-head > p{
+    font-family: 'NanumGothicBold';
+    border-bottom: 2px solid transparent;
+    padding: 5px 0;
+}
+.tab-sub-head p.active {
+    color: var(--color-green1); /* 원하는 색상으로 변경 */
+    font-weight: bold; /* 필요하면 글씨 굵게 */
+}
+.tab-sub-head > p:hover,
+.tab-sub-head > p.active
+{
+    font-weight: bold;
+    border-bottom: 2px solid #8CC63E;
+}
+.tab-sub-con01{
+    margin-top: 60px;
+}
+.tab-img-con01{
+    position: relative;
+    border-radius: 46px;
+    overflow: hidden;
+}
+.tab-img-con01 > img{
+    width: 100%;
+}
+.tab-img-con01 > p{
+    font-size: 30px;
+    font-family: 'NanumGothic';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: white;
+    padding: 15px 0;
+    background-color: rgba(0, 0, 0,0.6);
+    width: 100%;
+}
+.swiper-wrapper{
+    margin-top: 60px;
+}
+.swiper-slide{
+    background:transparent;
+    border-radius: 46px;
+    overflow: hidden;
+    padding: 5px;
+}
+.swiper-slide:hover, 
+.swiper-slide.active{
+    background: linear-gradient(to left, #8CC63E, #8CC63E);
+    &::after{
+        content: '';
+        background-color: rgba(0,0, 0,0.4);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 0.6;
+    }
+}
+.swiper-slide > img {
+    width: 100%;
+    border-radius: 40px;
+}
+.swiper-button-next{
+    margin-top: 10px;
+}
+.swiper-button-prev{
+    margin-top: 10px;
+}
+.history{
+    position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        left:50%;
+        top:0;
+        height:100%;
+        border-right:1px solid ;
+    }
+    &::after{
+            content: '';
+            display: block;
+            clear: both;
+    }
+    >div{
+        clear: both;
+        float:left;
+        width:calc(50% - 30px);
+        text-align: right;
+        position: relative;
+        margin:30px 0;
+        line-height: 2.1;
+        font-size: 18px;
+        font-family: 'NanumGothic';
+    }
+
+    // odd(홀수)/even(짝수)
+    >div:nth-of-type(odd){
+        float:right;
+        text-align: left;
+        
+        &::before{
+            content: '';
+            width:20px; height:20px;
+            border-radius: 100%;
+            border:3px solid #8CC63E;
+            position: absolute;
+            left:-40px; top:18px;
+            background-color: white;
+        }
+    }
+    >div:nth-of-type(even){
+        &::after{
+            content: '';
+            width:20px; 
+            height:20px;
+            border-radius: 100%;
+            border:3px solid #8CC63E;
+            position: absolute;
+            right:-40px; top:18px;
+            background-color: white;
+        }
+    }
+    ol{
+        margin-top: 30px;
+    }
+    div > h2{
+        font-family: 'NanumGothicBold';
+        font-size: 30px;
+        color: #8CC63E;
+    }
+}
+.history-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 170px;
+}
+.history-main > figure > img{
+    margin-right: 40px;
+}
+.history-main > h2{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    border: 100px solid #8CC63E;
+    border-radius: 100%;
+    width:150px; 
+    height:150px;
+    margin-left: 45px;
+    color: white;
+    font-size: 30px;
+    font-family: 'NanumGothicBold';
+}
+.history-main > p {
+    font-size: 30px;
+    font-family: 'NanumGothicBold';
+    margin-left: 50px;
+}
+
+//history2
+.tab-sub-con02{
+    margin-top: 60px;
+    display: none;
+}
+.tab-img-con02{
+    position: relative;
+    border-radius: 46px;
+    overflow: hidden;
+}
+.tab-img-con02 > img{
+    width: 100%;
+}
+.tab-img-con02 > p{
+    font-size: 30px;
+    font-family: 'NanumGothic';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: white;
+    padding: 15px 0;
+    background-color: rgba(0, 0, 0,0.6);
+    width: 100%;
+}
+.swiper-wrapper{
+    margin-top: 60px;
+}
+.swiper-slide{
+    background:transparent;
+    border-radius: 46px;
+    overflow: hidden;
+    padding: 5px;
+}
+.swiper-slide:hover, 
+.swiper-slide.active{
+    background: linear-gradient(to left, #8CC63E, #8CC63E);
+    &::after{
+        content: '';
+        background-color: rgba(0,0, 0,0.4);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 0.6;
+    }
+}
+.swiper-slide > img {
+    width: 100%;
+    border-radius: 40px;
+}
+.swiper-button-next{
+    margin-top: 10px;
+}
+.swiper-button-prev{
+    margin-top: 10px;
+}
+.tab-coon01{
+    margin-top: 90px;
+    text-align: center;
+}
+.tab-coon01 > h2{
+    font-size: 40px;
+    font-family: 'NanumGothicExtraBold';
+    margin-bottom: 60px;
+}
+.tab-coon01 > h2> strong{
+    color: #8CC63E;
+}
+.tab-coon01 > b{
+    font-size: 30px;
+    font-family: 'NanumGothic';
+}
+.tab-coon01 > p {
+    text-align: center;
+    font-size: 25px;
+    font-family: 'NanumGothicExtraBold';
+    margin: 45px auto 0;
+    width: 15%;
+    padding: 10px;
+    border: 4px solid white;
+    border-radius: 15px;
+    background-color: #8CC63E;
+    color: white;
+}
+.tab-coon01 > h1{
+    font-size: 20px;
+    margin-top: 45px;
+    font-family: 'NanumGothicBold';
+    text-align: center;
+}
+.tab-cl{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.tab-cl > figure > img{
+    width: 186px;
+    margin: 45px;
+}
+.tab-cl > p{
+    font-size: 30px;
+    font-family: 'NanumGothicExtraBold';
+    color: #8CC63E;
+}
+.tab-cl > b{
+    font-size: 30px;
+    font-family: 'NanumGothicExtraBold';
+}
+.tab-cl01{
+    float: left;
+}
+.tab-cl01 > b{
+    font-size: 25px;
+    font-family: 'NanumGothicBold';
+    text-align: center;
+}
+.tab-cl01 > b:after{
+    content: "";
+    display: block;
+    width: 70px; 
+    border-bottom: 3px solid #8CC63E;
+    margin: 20px auto;
+}
+.tab-cl01 > figure > img {
+    width: 495px;
+    border: 4px solid rgba(0, 0, 0,0.2);
+    padding: 50px;
+    margin-top: 60px;
+}
+.tab-cl01 > p{
+    font-size: 20px;
+    font-family: 'NanumGothic';
+    margin-top: 60px;
+    text-align: center;
+}
+.tab-cl02{
+    float: right;
+}
+.tab-cl02 > b{
+    font-size: 25px;
+    font-family: 'NanumGothicBold';
+    text-align: center;
+}
+.tab-cl02 > b:after{
+    content: "";
+    display: block;
+    width: 70px; 
+    border-bottom: 3px solid #8CC63E;
+    margin: 20px auto;
+}
+.tab-cl02 > figure > img{
+    width: 495px;
+    border: 4px solid rgba(0, 0, 0,0.2);
+    padding: 50px;
+    margin-top: 60px;
+}
+.tab-cl02 > p{
+    font-size: 20px;
+    font-family: 'NanumGothic';
+    margin-top: 50px;
+    text-align: center;
+}
+
+@import "_res-company.scss";
